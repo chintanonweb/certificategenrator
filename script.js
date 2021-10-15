@@ -16,9 +16,14 @@ function drawImage() {
 	var height = width / ratio;
 	ctx.drawImage(image, 0, 0, width, height);
 	// ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
-	ctx.font = '80px monotype corsiva'
+	ctx.font = '80px Lobster'
 	ctx.fillStyle = '#D5AC51'
-	ctx.fillText(nameInput.value, 380, 420)
+	ctx.textAlign = 'center';
+	ctx.textBaseline = 'middle';
+	ctx.direction = "inherit";
+	var x = canvas.width / 2;
+	var y = canvas.height / 2;
+	ctx.fillText(nameInput.value, 620, 400)
 }
 
 nameInput.addEventListener('input', function () {
