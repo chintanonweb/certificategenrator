@@ -1,4 +1,3 @@
-
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d')
 const nameInput = document.getElementById('name')
@@ -17,9 +16,9 @@ function drawImage() {
 	var height = width / ratio;
 	ctx.drawImage(image, 0, 0, width, height);
 	// ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
-	ctx.font = '80px Times New Roman'
+	ctx.font = '80px monotype corsiva'
 	ctx.fillStyle = '#D5AC51'
-	ctx.fillText(nameInput.value, 370, 420)
+	ctx.fillText(nameInput.value, 380, 420)
 }
 
 nameInput.addEventListener('input', function () {
