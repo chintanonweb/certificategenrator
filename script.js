@@ -17,9 +17,9 @@ function drawImage() {
 	var height = width / ratio;
 	ctx.drawImage(image, 0, 0, width, height);
 	// ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
-	ctx.font = '80px Charm cursive'
+	ctx.font = '80px Times New Roman'
 	ctx.fillStyle = '#D5AC51'
-	ctx.fillText(nameInput.value, 400, 420)
+	ctx.fillText(nameInput.value, 370, 420)
 }
 
 nameInput.addEventListener('input', function () {
